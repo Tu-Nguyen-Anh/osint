@@ -1,0 +1,203 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mcom.ncsgroup:profiling[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding profiling 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.2.0:clean[m [1m(default-clean)[m @ [36mprofiling[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/luatnq/workspace/ncs/profiling/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.9:build-classpath[m [1m(default)[m @ [36mprofiling[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mprofiling[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] Copying 49 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:compile[m [1m(default-compile)[m @ [36mprofiling[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 21 source files to /home/luatnq/workspace/ncs/profiling/target/classes
+[[1;34mINFO[m] /home/luatnq/workspace/ncs/profiling/src/main/java/com/ncsgroup/profiling/data/dto/response/ResponseGeneral.java: /home/luatnq/workspace/ncs/profiling/src/main/java/com/ncsgroup/profiling/data/dto/response/ResponseGeneral.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /home/luatnq/workspace/ncs/profiling/src/main/java/com/ncsgroup/profiling/data/dto/response/ResponseGeneral.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mprofiling[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/luatnq/workspace/ncs/profiling/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.10.1:testCompile[m [1m(default-testCompile)[m @ [36mprofiling[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/luatnq/workspace/ncs/profiling/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.2:test[m [1m(default-test)[m @ [36mprofiling[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.ncsgroup.profiling.[1mProfilingApplicationTests[m
+16:00:49.287 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:00:49.293 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:00:49.317 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.ncsgroup.profiling.ProfilingApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:00:49.323 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ncsgroup.profiling.ProfilingApplicationTests], using SpringBootContextLoader
+16:00:49.326 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ncsgroup.profiling.ProfilingApplicationTests]: class path resource [com/ncsgroup/profiling/ProfilingApplicationTests-context.xml] does not exist
+16:00:49.327 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ncsgroup.profiling.ProfilingApplicationTests]: class path resource [com/ncsgroup/profiling/ProfilingApplicationTestsContext.groovy] does not exist
+16:00:49.327 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.ncsgroup.profiling.ProfilingApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:00:49.327 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ncsgroup.profiling.ProfilingApplicationTests]: ProfilingApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:00:49.354 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ncsgroup.profiling.ProfilingApplicationTests]
+16:00:49.390 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/luatnq/workspace/ncs/profiling/target/classes/com/ncsgroup/profiling/ProfilingApplication.class]
+16:00:49.391 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ncsgroup.profiling.ProfilingApplication for test class com.ncsgroup.profiling.ProfilingApplicationTests
+16:00:49.458 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.ncsgroup.profiling.ProfilingApplicationTests]: using defaults.
+16:00:49.458 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:00:49.470 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5066d65f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4233e892, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@77d2e85, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3ecd267f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@58ffcbd7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@555cf22, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6bb2d00b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9bfddc, org.springframework.test.context.event.EventPublishingTestExecutionListener@1a9c38eb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@319bc845, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4c5474f5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2f4205be, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@54e22bdd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3bd418e4, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@544820b7]
+16:00:49.473 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6955cb39 testClass = ProfilingApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@235a0c16 testClass = ProfilingApplicationTests, locations = '{}', classes = '{class com.ncsgroup.profiling.ProfilingApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@264f218, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@81d9a72, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1e13529a, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2f666ebb, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@205d38da, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@7c0c77c7], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.9)
+
+2023-03-15 16:00:49.723  INFO 153776 --- [           main] c.n.profiling.ProfilingApplicationTests  : Starting ProfilingApplicationTests using Java 11.0.18 on luatnq-ncs with PID 153776 (started by luatnq in /home/luatnq/workspace/ncs/profiling)
+2023-03-15 16:00:49.724  INFO 153776 --- [           main] c.n.profiling.ProfilingApplicationTests  : The following 2 profiles are active: "dev", "dev-local"
+2023-03-15 16:00:50.076  INFO 153776 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15 16:00:50.087  INFO 153776 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2023-03-15 16:00:50.609  INFO 153776 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-15 16:00:50.844  INFO 153776 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-15 16:00:51.086  INFO 153776 --- [           main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-03-15 16:00:51.269  INFO 153776 --- [           main] liquibase.changelog                      : Reading from `database`.DATABASECHANGELOG
+2023-03-15 16:00:51.325  INFO 153776 --- [           main] liquibase.lockservice                    : Successfully released change log lock
+2023-03-15 16:00:51.443  INFO 153776 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15 16:00:51.491  INFO 153776 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-15 16:00:51.602  INFO 153776 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-15 16:00:51.677  INFO 153776 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-15 16:00:51.786  INFO 153776 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-15 16:00:51.793  INFO 153776 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:00:51.859  WARN 153776 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c8626631-4267-4461-b8cf-0d58d0e42b33
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-03-15 16:00:51.946  INFO 153776 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@526fc044, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45635ae1, org.springframework.security.web.context.SecurityContextPersistenceFilter@233ece92, org.springframework.security.web.header.HeaderWriterFilter@40edc64e, org.springframework.security.web.authentication.logout.LogoutFilter@8c3b634, com.ncsgroup.profiling.filter.JwtAuthenticationFilter@c29b0dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15ce261, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@723b8eff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7adbec34, org.springframework.security.web.session.SessionManagementFilter@2ae4c424, org.springframework.security.web.access.ExceptionTranslationFilter@1ca0aa40, org.springframework.security.web.access.intercept.AuthorizationFilter@2dbb8da0]
+2023-03-15 16:00:52.096  WARN 153776 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 16:00:52.523  INFO 153776 --- [           main] c.n.profiling.ProfilingApplicationTests  : Started ProfilingApplicationTests in 3.025 seconds (JVM running for 3.672)
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.418 s - in com.ncsgroup.profiling.[1mProfilingApplicationTests[m
+2023-03-15 16:00:52.676  INFO 153776 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 16:00:52.678  INFO 153776 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-15 16:00:52.684  INFO 153776 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.1.0:jar[m [1m(default-jar)[m @ [36mprofiling[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/luatnq/workspace/ncs/profiling/release/profiling-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-dependency-plugin:2.9:copy-dependencies[m [1m(copy-dependencies)[m @ [36mprofiling[0;1m ---[m
+[[1;34mINFO[m] org.liquibase:liquibase-core:jar:4.9.1 already exists in destination.
+[[1;34mINFO[m] org.mockito:mockito-core:jar:4.5.1 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-starter-security:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-test:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] net.minidev:json-smart:jar:2.4.8 already exists in destination.
+[[1;34mINFO[m] org.glassfish.jaxb:txw2:jar:2.3.8 already exists in destination.
+[[1;34mINFO[m] com.fasterxml.jackson.core:jackson-databind:jar:2.13.5 already exists in destination.
+[[1;34mINFO[m] org.jboss.logging:jboss-logging:jar:3.4.3.Final already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-starter-logging:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-aop:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] javax.xml.bind:jaxb-api:jar:2.3.1 already exists in destination.
+[[1;34mINFO[m] org.springframework.security:spring-security-crypto:jar:5.7.7 already exists in destination.
+[[1;34mINFO[m] org.slf4j:slf4j-api:jar:1.7.36 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-starter-data-jpa:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] org.springframework.security:spring-security-config:jar:5.7.7 already exists in destination.
+[[1;34mINFO[m] jakarta.persistence:jakarta.persistence-api:jar:2.2.3 already exists in destination.
+[[1;34mINFO[m] net.minidev:accessors-smart:jar:2.4.8 already exists in destination.
+[[1;34mINFO[m] org.opentest4j:opentest4j:jar:1.2.0 already exists in destination.
+[[1;34mINFO[m] antlr:antlr:jar:2.7.7 already exists in destination.
+[[1;34mINFO[m] jakarta.annotation:jakarta.annotation-api:jar:1.3.5 already exists in destination.
+[[1;34mINFO[m] org.mockito:mockito-junit-jupiter:jar:4.5.1 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-test-autoconfigure:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-starter-jdbc:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] org.projectlombok:lombok:jar:1.18.26 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-starter-aop:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] org.junit.jupiter:junit-jupiter-api:jar:5.8.2 already exists in destination.
+[[1;34mINFO[m] com.sun.istack:istack-commons-runtime:jar:3.0.12 already exists in destination.
+[[1;34mINFO[m] jakarta.activation:jakarta.activation-api:jar:1.2.2 already exists in destination.
+[[1;34mINFO[m] org.springframework.data:spring-data-commons:jar:2.7.8 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-core:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-starter-json:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] ch.qos.logback:logback-core:jar:1.2.11 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-webmvc:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] org.hibernate:hibernate-core:jar:5.6.15.Final already exists in destination.
+[[1;34mINFO[m] org.springframework.security:spring-security-core:jar:5.7.7 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-starter:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-starter-test:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] javax.activation:javax.activation-api:jar:1.2.0 already exists in destination.
+[[1;34mINFO[m] org.assertj:assertj-core:jar:3.22.0 already exists in destination.
+[[1;34mINFO[m] org.junit.jupiter:junit-jupiter-params:jar:5.8.2 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-test:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] com.jayway.jsonpath:json-path:jar:2.7.0 already exists in destination.
+[[1;34mINFO[m] com.mysql:mysql-connector-j:jar:8.0.32 already exists in destination.
+[[1;34mINFO[m] com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.5 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-starter-tomcat:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] org.xmlunit:xmlunit-core:jar:2.9.1 already exists in destination.
+[[1;34mINFO[m] ch.qos.logback:logback-classic:jar:1.2.11 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-web:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] org.junit.jupiter:junit-jupiter-engine:jar:5.8.2 already exists in destination.
+[[1;34mINFO[m] org.apache.logging.log4j:log4j-api:jar:2.17.2 already exists in destination.
+[[1;34mINFO[m] jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-beans:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-tx:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5 already exists in destination.
+[[1;34mINFO[m] org.springframework.data:spring-data-jpa:jar:2.7.8 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-orm:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] com.sun.activation:jakarta.activation:jar:1.2.2 already exists in destination.
+[[1;34mINFO[m] jakarta.transaction:jakarta.transaction-api:jar:1.3.3 already exists in destination.
+[[1;34mINFO[m] org.hibernate.validator:hibernate-validator:jar:6.2.5.Final already exists in destination.
+[[1;34mINFO[m] org.junit.platform:junit-platform-commons:jar:1.8.2 already exists in destination.
+[[1;34mINFO[m] org.junit.platform:junit-platform-engine:jar:1.8.2 already exists in destination.
+[[1;34mINFO[m] org.ow2.asm:asm:jar:9.1 already exists in destination.
+[[1;34mINFO[m] org.junit.jupiter:junit-jupiter:jar:5.8.2 already exists in destination.
+[[1;34mINFO[m] net.bytebuddy:byte-buddy:jar:1.12.23 already exists in destination.
+[[1;34mINFO[m] org.aspectj:aspectjweaver:jar:1.9.7 already exists in destination.
+[[1;34mINFO[m] org.slf4j:jul-to-slf4j:jar:1.7.36 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-aspects:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-context:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] org.hibernate.common:hibernate-commons-annotations:jar:5.1.2.Final already exists in destination.
+[[1;34mINFO[m] com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.5 already exists in destination.
+[[1;34mINFO[m] org.glassfish.jaxb:jaxb-runtime:jar:2.3.8 already exists in destination.
+[[1;34mINFO[m] org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.71 already exists in destination.
+[[1;34mINFO[m] org.hamcrest:hamcrest:jar:2.2 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-jdbc:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] org.objenesis:objenesis:jar:3.2 already exists in destination.
+[[1;34mINFO[m] org.jboss:jandex:jar:2.4.2.Final already exists in destination.
+[[1;34mINFO[m] org.yaml:snakeyaml:jar:1.30 already exists in destination.
+[[1;34mINFO[m] com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.13.5 already exists in destination.
+[[1;34mINFO[m] org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.2 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-starter-validation:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] org.apiguardian:apiguardian-api:jar:1.1.2 already exists in destination.
+[[1;34mINFO[m] org.skyscreamer:jsonassert:jar:1.5.1 already exists in destination.
+[[1;34mINFO[m] com.zaxxer:HikariCP:jar:4.0.3 already exists in destination.
+[[1;34mINFO[m] net.bytebuddy:byte-buddy-agent:jar:1.12.23 already exists in destination.
+[[1;34mINFO[m] jakarta.validation:jakarta.validation-api:jar:2.0.2 already exists in destination.
+[[1;34mINFO[m] org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.71 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-autoconfigure:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] org.springframework.security:spring-security-web:jar:5.7.7 already exists in destination.
+[[1;34mINFO[m] com.fasterxml.jackson.core:jackson-core:jar:2.13.5 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-expression:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1 already exists in destination.
+[[1;34mINFO[m] org.springframework:spring-jcl:jar:5.3.25 already exists in destination.
+[[1;34mINFO[m] org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.71 already exists in destination.
+[[1;34mINFO[m] com.fasterxml:classmate:jar:1.5.1 already exists in destination.
+[[1;34mINFO[m] org.springframework.boot:spring-boot-starter-web:jar:2.7.9 already exists in destination.
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  6.759 s
+[[1;34mINFO[m] Finished at: 2023-03-15T16:00:53+07:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+Profiling start fail
