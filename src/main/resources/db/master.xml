@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <!-- <include file="changelog/00000000000000_create_persistent_audit_event_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000001_create_persistent_audit_evt_data_table.sql" relativeToChangelogFile="true"/>
+
+    <include file="changelog/00000000000002_create_group_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000002_create_permission_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000002_create_user_table.sql" relativeToChangelogFile="true"/>
+
+    <include file="changelog/00000000000003_create_group_permission_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000003_create_user_group_table.sql" relativeToChangelogFile="true"/>
+
+    <include file="changelog/00000000000004_insert_group_data.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000004_insert_permission_data.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000004_insert_user_data.sql" relativeToChangelogFile="true"/>
+
+    <include file="changelog/00000000000005_insert_group_permission.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000005_insert_user_group.sql" relativeToChangelogFile="true"/>
+
+    <include file="changelog/00000000000006_fix_liquibase.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000007_create_topic_permission_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000008_create_topic_album_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000009_after_topic_config_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000010_after_topic_config_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000011_create_topic_subcribe_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000012_update_tag.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000013_link_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000014_update_topic_config.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000015_update_topic_post.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000016_update_topic.sql" relativeToChangelogFile="true"/>
+	<include file="changelog/00000000000017_update_news_type.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000018_update_permission.sql" relativeToChangelogFile="true"/>
+	<include file="changelog/00000000000019_topic_over_config.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000020_fix_permissions.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000022_fix_permissions.sql" relativeToChangelogFile="true"/>
+	<include file="changelog/00000000000023_update_topic_over_config.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000024_update_permissions.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000025_update_permissions.sql" relativeToChangelogFile="true"/> -->
+    <include file="changelog/00000000000002_create_user_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000028_create_chu_de_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000027_create_bai_viet_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000029_create_luot_de_cap_table.sql" relativeToChangelogFile="true"/>
+	<include file="changelog/00000000000037_create_web_luot_de_cap_table.sql" relativeToChangelogFile="true"/>
+	<include file="changelog/00000000000038_create_ghim_bai_viet_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000039_create_ghim_doi_tuong_table.sql" relativeToChangelogFile="true"/>
+
+    <include file="changelog/00000000000030_create_nguon_phat_sinh_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000031_create_tac_gia_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000032_create_theo_doi_bai_viet_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000033_create_theo_doi_domain_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000034_create_theo_doi_luot_de_cap_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000035_create_thong_ke_overview_table.sql" relativeToChangelogFile="true"/>
+    <include file="changelog/00000000000036_create_tong_quan_table.sql" relativeToChangelogFile="true"/>
+<!--    <include file="data/00000000000001_data_fake_profiling.sql" relativeToChangelogFile="true"/>-->
+
+</databaseChangeLog>
