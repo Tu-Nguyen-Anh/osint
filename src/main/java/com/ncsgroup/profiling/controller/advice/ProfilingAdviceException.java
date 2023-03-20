@@ -1,7 +1,7 @@
 package com.ncsgroup.profiling.controller.advice;
 
-import com.ncsgroup.profiling.data.dto.response.Error;
-import com.ncsgroup.profiling.data.dto.response.ResponseGeneral;
+import com.ncsgroup.profiling.dto.response.Error;
+import com.ncsgroup.profiling.dto.response.ResponseGeneral;
 import com.ncsgroup.profiling.exception.base.BaseException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

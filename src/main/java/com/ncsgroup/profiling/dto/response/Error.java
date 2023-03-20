@@ -1,4 +1,4 @@
-package com.ncsgroup.profiling.data.dto.response;
+package com.ncsgroup.profiling.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

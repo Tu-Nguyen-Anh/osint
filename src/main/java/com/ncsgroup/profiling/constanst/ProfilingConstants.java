@@ -6,6 +6,11 @@ public class ProfilingConstants {
     public static final String ENCODING_UTF_8 = "UTF-8";
   }
 
+  public static class AuditorConstant {
+    public static final String ANONYMOUS = "anonymousUser";
+    public static final String SYSTEM = "SYSTEM";
+  }
+
   public static class StatusException {
     public static final Integer NOT_FOUND = 404;
     public static final Integer CONFLICT = 409;
