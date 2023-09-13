@@ -1,11 +1,11 @@
 package com.ncsgroup.profiling.entity.base;
 
 
+import jakarta.persistence.MappedSuperclass;
 import lombok.Data;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 
-import javax.persistence.MappedSuperclass;
 
 @Data
 @MappedSuperclass
