@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ProfilingApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ProfilingApplication.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(ProfilingApplication.class, args);
+  }
 
 }

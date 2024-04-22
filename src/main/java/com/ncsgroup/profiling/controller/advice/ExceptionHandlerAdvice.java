@@ -1,6 +1,7 @@
 package com.ncsgroup.profiling.controller.advice;
 
 
+import com.ncsgroup.profiling.dto.response.Error;
 import com.ncsgroup.profiling.dto.response.ResponseGeneral;
 import com.ncsgroup.profiling.exception.base.BaseException;
 import jakarta.validation.ConstraintViolationException;
@@ -13,15 +14,12 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
-import com.ncsgroup.profiling.dto.response.Error;
-
 
 import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 
-import static com.ncsgroup.profiling.constanst.ProfilingConstants.CommonConstants.DEFAULT_LANGUAGE;
-import static com.ncsgroup.profiling.constanst.ProfilingConstants.CommonConstants.LANGUAGE;
+import static com.ncsgroup.profiling.constanst.ProfilingConstants.CommonConstants.*;
 
 @Slf4j
 @RestControllerAdvice
@@ -122,6 +120,6 @@ public class ExceptionHandlerAdvice {
   }
 
   private String getMessageParamsKey(String key) {
-    return "%" + key + "%";
+    return PERCENT + key + PERCENT;
   }
 }

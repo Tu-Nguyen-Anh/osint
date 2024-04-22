@@ -4,8 +4,12 @@ import java.util.List;
 
 public interface BaseService<T> {
   T create(T t);
+
   T update(T t);
-  void delete(String id);
-  T get(String id);
+
+  void delete(Integer id);
+
+  T get(Integer id);
+
   List<T> list();
 }
