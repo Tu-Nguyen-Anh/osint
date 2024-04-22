@@ -2,29 +2,33 @@ package com.ncsgroup.profiling.exception.base;
 
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class BaseException extends RuntimeException {
-  private String message;
-  private String code;
-  private int status;
-  private Map<String, String> params;
+  private final String code;
+  private final int status;
+  private final Map<String, String> params;
 
-  public BaseException() {
-    this.status = 0;
-    this.code = "";
-    this.message = "";
-    this.params = new HashMap<>();
+  public BaseException(String code, String message, int status, Map<String, String> params) {
+    super(message);
+    this.code = code;
+    this.status = status;
+    this.params = params != null ? new HashMap<>(params) : Collections.emptyMap();
   }
 
-  public void addParam(String key, String value) {
-    if (Objects.isNull(params)) {
-      params = new HashMap<>();
-    }
-    params.put(key, value);
+  public BaseException(String message) {
+    this("", message, 0, Collections.emptyMap());
+  }
+
+  public BaseException addParam(String key, String value) {
+    Map<String, String> newParams = new HashMap<>(this.params);
+    newParams.put(key, value);
+    return new BaseException(this.code, this.getMessage(), this.status, newParams);
   }
 }
