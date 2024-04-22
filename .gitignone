@@ -20,7 +20,7 @@ release/
 *.iws
 *.iml
 *.ipr
-
+.mvn
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
