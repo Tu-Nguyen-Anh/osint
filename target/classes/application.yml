@@ -7,10 +7,6 @@ spring:
       - dev-local
   liquibase:
     change-log: classpath:db/master.xml
-
-conditional:
-  bean:
-    enabled: false
 server:
   port: 8081
 
