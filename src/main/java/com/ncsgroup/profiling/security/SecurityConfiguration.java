@@ -16,66 +16,69 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
+import static com.ncsgroup.profiling.constanst.ProfilingConstants.AuthConstant.MATCHER_ADMIN_API;
+import static com.ncsgroup.profiling.constanst.ProfilingConstants.AuthConstant.MATCHER_USER_API;
+
 
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfiguration {
 
-  private final JwtAuthenticationFilter jwtAuthenticationFilter;
-  private final UnAuthenticationCustomHandler unAuthenticationCustomHandler;
-  private final UnAuthorizationCustomHandler unAuthorizationCustomHandler;
+    private final JwtAuthenticationFilter jwtAuthenticationFilter;
+    private final UnAuthenticationCustomHandler unAuthenticationCustomHandler;
+    private final UnAuthorizationCustomHandler unAuthorizationCustomHandler;
 
-  @Bean
-  public SecurityFilterChain securityFilterChainUsersAPI(HttpSecurity httpSecurity) throws Exception {
-    sharedSecurityConfiguration(httpSecurity);
-    httpSecurity
-          .securityMatcher("/api/v1/**", "/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs/**", "/actuator/**")
-          .authorizeHttpRequests(auth -> {
-            auth.anyRequest().authenticated();
-          })
-          .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
-          .exceptionHandling(exception -> exception
-                .authenticationEntryPoint(unAuthenticationCustomHandler)
-                .accessDeniedHandler(unAuthorizationCustomHandler));
-    return httpSecurity.build();
-  }
+    @Bean
+    public SecurityFilterChain securityFilterChainUsersAPI(HttpSecurity httpSecurity) throws Exception {
+        sharedSecurityConfiguration(httpSecurity);
+        httpSecurity
+                .securityMatcher(MATCHER_USER_API)
+                .authorizeHttpRequests(auth -> {
+                    auth.anyRequest().authenticated();
+                })
+                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
+                .exceptionHandling(exception -> exception
+                        .authenticationEntryPoint(unAuthenticationCustomHandler)
+                        .accessDeniedHandler(unAuthorizationCustomHandler));
+        return httpSecurity.build();
+    }
 
-  @Bean
-  public SecurityFilterChain securityFilterChainAdminsAPI(HttpSecurity httpSecurity) throws Exception {
-    sharedSecurityConfiguration(httpSecurity);
-    httpSecurity
-          .securityMatcher("/api/v1/admin/**")
-          .authorizeHttpRequests(auth -> {
-            auth.anyRequest().authenticated();
-          })
-          .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
-          .exceptionHandling(exception -> exception
-                .authenticationEntryPoint(unAuthenticationCustomHandler)
-                .accessDeniedHandler(unAuthorizationCustomHandler));
+    @Bean
+    public SecurityFilterChain securityFilterChainAdminsAPI(HttpSecurity httpSecurity) throws Exception {
+        sharedSecurityConfiguration(httpSecurity);
+        httpSecurity
+                .securityMatcher(MATCHER_ADMIN_API)
+                .authorizeHttpRequests(auth -> {
+                    auth.anyRequest().permitAll();
+                })
+                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
+                .exceptionHandling(exception -> exception
+                        .authenticationEntryPoint(unAuthenticationCustomHandler)
+                        .accessDeniedHandler(unAuthorizationCustomHandler));
 
-    return httpSecurity.build();
-  }
+        return httpSecurity.build();
+    }
 
-  private void sharedSecurityConfiguration(HttpSecurity httpSecurity) throws Exception {
-    httpSecurity
-          .csrf(AbstractHttpConfigurer::disable)
-          .cors(AbstractHttpConfigurer::disable)
-          .sessionManagement(httpSecuritySessionManagementConfigurer -> {
-            httpSecuritySessionManagementConfigurer
-                  .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-          });
-  }
+    private void sharedSecurityConfiguration(HttpSecurity httpSecurity) throws Exception {
+        httpSecurity
+                .csrf(AbstractHttpConfigurer::disable)
+                .cors(AbstractHttpConfigurer::disable)
+                .sessionManagement(httpSecuritySessionManagementConfigurer -> {
+                    httpSecuritySessionManagementConfigurer
+                            .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                });
+    }
 
 
-  @Bean
-  CorsConfigurationSource corsConfigurationSource() {
-    CorsConfiguration configuration = new CorsConfiguration();
-    configuration.addAllowedHeader("*");
-    configuration.addAllowedOrigin("*");
-    configuration.addAllowedMethod("*");
-    UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-    source.registerCorsConfiguration("/**", configuration);
-    return source;
-  }
+    @Bean
+    CorsConfigurationSource corsConfigurationSource() {
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.addAllowedHeader("*");
+        configuration.addAllowedOrigin("*");
+        configuration.addAllowedMethod("*");
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", configuration);
+        return source;
+    }
 }

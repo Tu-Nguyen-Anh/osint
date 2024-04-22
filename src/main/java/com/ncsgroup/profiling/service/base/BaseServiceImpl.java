@@ -22,13 +22,17 @@ public class BaseServiceImpl<T> implements BaseService<T> {
   }
 
   @Override
-  public void delete(String id) {repository.deleteById(id);}
+  public void delete(Integer id) {
+    repository.deleteById(id);
+  }
 
   @Override
-  public T get(String id) {
+  public T get(Integer id) {
     return repository.findById(id).orElse(null);
   }
 
   @Override
-  public List<T> list() {return repository.findAll();}
+  public List<T> list() {
+    return repository.findAll();
+  }
 }

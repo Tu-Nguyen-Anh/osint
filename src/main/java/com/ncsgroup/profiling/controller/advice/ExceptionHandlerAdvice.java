@@ -20,8 +20,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 
-import static com.ncsgroup.profiling.constanst.ProfilingConstants.CommonConstants.DEFAULT_LANGUAGE;
-import static com.ncsgroup.profiling.constanst.ProfilingConstants.CommonConstants.LANGUAGE;
+import static com.ncsgroup.profiling.constanst.ProfilingConstants.CommonConstants.*;
 
 @Slf4j
 @RestControllerAdvice
@@ -122,6 +121,6 @@ public class ExceptionHandlerAdvice {
   }
 
   private String getMessageParamsKey(String key) {
-    return "%" + key + "%";
+    return PERCENT + key + PERCENT;
   }
 }
