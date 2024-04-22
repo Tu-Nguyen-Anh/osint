@@ -1,9 +1,9 @@
 package org.oplearn.project.advice;
 
 
-import org.oplearn.project.response.Error;
-import org.oplearn.project.response.ResponseGeneral;
-import org.oplearn.project.base.BaseException;
+import org.oplearn.project.dto.response.Error;
+import org.oplearn.project.dto.response.ResponseGeneral;
+import org.oplearn.project.exception.base.BaseException;
 import jakarta.validation.ConstraintViolationException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
