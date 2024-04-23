@@ -1,4 +1,4 @@
-package org.oplearn.project.enity.base;
+package org.oplearn.project.entity.base;
 
 
 import jakarta.persistence.*;
