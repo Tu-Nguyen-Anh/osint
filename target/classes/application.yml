@@ -13,3 +13,7 @@ server:
 logging:
   level:
     sql: debug
+conditional:
+  bean:
+    messageService:
+      enabled: true

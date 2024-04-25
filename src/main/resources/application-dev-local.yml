@@ -3,4 +3,4 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: postgres
-    url: jdbc:postgresql://localhost:5432/database?allowPublicKeyRetrieval=true
+    url: jdbc:postgresql://localhost:5432/test09?allowPublicKeyRetrieval=true

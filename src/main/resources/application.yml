@@ -1,6 +1,6 @@
 spring:
   application:
-    name: profiling
+    name: openlearnhub
   profiles:
     active:
       - dev
@@ -13,3 +13,6 @@ server:
 logging:
   level:
     sql: debug
+conditional:
+  bean:
+    messageService: true
