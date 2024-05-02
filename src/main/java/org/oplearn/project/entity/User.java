@@ -8,8 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -28,5 +27,7 @@ public class User extends AuditEntity {
   private List<String> topicIds;
   @Field("department_ids")
   private List<String> departmentIds;
+  @Field("is_deleted")
+  private boolean isDeleted;
 
 }
