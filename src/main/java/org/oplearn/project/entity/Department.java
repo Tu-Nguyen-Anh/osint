@@ -8,8 +8,6 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.lang.annotation.Documented;
 import java.util.List;
 
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -23,6 +21,8 @@ public class Department extends AuditEntity {
   private List<String> memberId;
   @Field("total_member")
   private Integer totalMember;
+  @Field("is_deleted")
+  private boolean isDeleted;
 
 
 
