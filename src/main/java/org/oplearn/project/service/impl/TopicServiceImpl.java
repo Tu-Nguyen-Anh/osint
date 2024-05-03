@@ -23,10 +23,9 @@ public class TopicServiceImpl implements TopicService {
     log.info("(create) :{}", request);
 
     Topic topic = Topic.from(request.getName());
-    topic.setId(generateId());
 
     topic = repository.save(topic);
 
-    return new TopicResponse(topic.getName());
+    return new TopicResponse(topic.getId(),topic.getName());
   }
 }
