@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 
-@AllArgsConstructor
+@AllArgsConstructor(staticName = "of")
 @NoArgsConstructor
 @Data
 @Document("topics")
@@ -15,5 +15,9 @@ public class Topic extends AuditEntity {
   private String name;
   @Field("is_deleted")
   private boolean isDeleted;
+
+  public static Topic from (String name){
+    return Topic.of(name, false);
+  }
 
 }
